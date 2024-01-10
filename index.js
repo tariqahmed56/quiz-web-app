@@ -1,5 +1,41 @@
 const quizData = [
   {
+		question: "What is the difference between asexual and sexual reproduction?",
+		options: [
+		  { text: "Asexual reproduction involves the fusion of gametes, while sexual reproduction does not.", isCorrect: false },
+		  { text: "Asexual reproduction produces offspring that are genetically identical to the parent, while sexual reproduction produces offspring that are genetically diverse.", isCorrect: true },
+		  { text: "Asexual reproduction is only found in plants, while sexual reproduction is only found in animals.", isCorrect: false },
+		  { text: "Asexual reproduction does not involve the fusion of gametes, while sexual reproduction does.", isCorrect: false }
+		]
+	  },
+    {
+      question: "What is the difference between spermatogenesis and oogenesis?",
+      options: [
+        { text: "Spermatogenesis produces four haploid cells, while oogenesis produces one haploid cell.", isCorrect: false },
+        { text: "Spermatogenesis occurs in the testes, while oogenesis occurs in the ovaries.", isCorrect: false },
+        { text: "Spermatogenesis produces sperm cells, while oogenesis produces egg cells.", isCorrect: false },
+        { text: "All of the above.", isCorrect: true }
+      ]
+      },
+      {
+      question: "What is the menstrual cycle?",
+      options: [
+        { text: "The process by which an egg is released from the ovary.", isCorrect: false },
+        { text: "The process by which the uterus sheds its lining.", isCorrect: false },
+        { text: "The process by which the egg is fertilized by sperm.", isCorrect: false },
+        { text: "The monthly cycle of changes that occur in the female reproductive system, including the release of an egg and the buildup and shedding of the uterine lining.", isCorrect: true }
+      ]
+      },
+      {
+      question: "What is the role of the placenta?",
+      options: [
+        { text: "To produce hormones that regulate the menstrual cycle.", isCorrect: false },
+        { text: "To produce milk for the newborn.", isCorrect: false },
+        { text: "To protect the developing embryo from harm.", isCorrect: false },
+        { text: "To provide oxygen and nutrients to the developing fetus and remove waste products.", isCorrect: true }
+      ]
+      },
+  {
     topic: "Quadratic Equations",
     question: "What is the standard form of a quadratic equation?",
     options: [
@@ -122,7 +158,7 @@ const quizData = [
       { text: 'document.querySelectorAll (".example")', isCorrect: true },
       { text: 'document.getElementByClassName ("example")', isCorrect: false },
       { text: 'document.selectElementsByClass ("example")', isCorrect: false },
-      { text: 'document.find(".example")', isCorrect: false },
+      { text: 'document.find (".example")', isCorrect: false },
     ],
   },
   {
@@ -304,12 +340,12 @@ function validation(e) {
     let isCorrect = clicked.dataset.correct;
     optionsContainer.classList.add('clicked');
     if (isCorrect === "true") {
-      clicked.style.border = "1px solid green";
+      clicked.style.border = "2px solid green";
   
       scoreNum++;
       let score = (document.querySelector(".Score").innerHTML = scoreNum);
     } else {
-      clicked.style.border = "1px solid red";
+      clicked.style.border = "2px solid red";
       let labels = document.querySelectorAll(".label");
       labels.forEach((label) => { 
         if (label.dataset.correct === "true") {
