@@ -119,9 +119,9 @@ const quizData = [
     question:
       'How would you select all elements with the class name "example" using JavaScript?',
     options: [
-      { text: 'document.querySelectorAll(".example")', isCorrect: true },
-      { text: 'document.getElementByClassName("example")', isCorrect: false },
-      { text: 'document.selectElementsByClass("example")', isCorrect: false },
+      { text: 'document.querySelectorAll (".example")', isCorrect: true },
+      { text: 'document.getElementByClassName ("example")', isCorrect: false },
+      { text: 'document.selectElementsByClass ("example")', isCorrect: false },
       { text: 'document.find(".example")', isCorrect: false },
     ],
   },
