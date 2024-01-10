@@ -36,6 +36,8 @@ body {
 
 .optionsContainer {
   margin-top: 15px;
+  border: none !important;
+
 }
 .optionsContainer label {
   display: block;
