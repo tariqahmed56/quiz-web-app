@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  min-width: 300px;
+  width: 100%;
   min-height: 250px;
   box-shadow: 5px 5px 10px rgb(0, 0, 0);
   padding: 20px;
