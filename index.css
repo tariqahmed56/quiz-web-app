@@ -52,6 +52,7 @@ align-items: center;
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
+    width:100%;
 
 }
 
