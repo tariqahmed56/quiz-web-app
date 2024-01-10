@@ -23,6 +23,7 @@ border-radius: 10px;
 position: relative;
 display: flex;
 align-items: center;
+    text-wrap:wrap;
 /* flex-direction: column; */
 }
 .score{
